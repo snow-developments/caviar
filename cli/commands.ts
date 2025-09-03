@@ -13,7 +13,7 @@ export const genScene = async () => {
   });
   const content = createScene(name, web);
   await Deno.writeTextFile(
-    `./src/plugins/${name}.${web ? "js" : "ts"}`,
+    `./src/scenes/${name}.${web ? "js" : "ts"}`,
     content,
   );
 };
